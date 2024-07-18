@@ -11,8 +11,8 @@ public class ExceptionsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ExceptionsApplication.class, args);
 	
-		Lista ex2 = new Lista();
-		ex2.ex02();
+		Lista ex3 = new Lista();
+		ex3.ex03();
 	
 	}
 

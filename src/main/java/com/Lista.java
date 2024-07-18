@@ -2,6 +2,8 @@ package com;
 
 import java.util.Scanner;
 
+import com.exceptions.Minhaexception;
+
 public class Lista {
 
     public void ex01(){
@@ -65,6 +67,55 @@ public class Lista {
 
     }
     
+    public void ex03(){
+        
+        Scanner scanner = new Scanner(System.in);
+        int escolha;
+
+        System.out.println("Bem-vindo(a) ao Menu:");
+        System.out.println("1 - ver nomes.");
+        System.out.println("2 - sair.");
+
+        try {
+            escolha = scanner.nextInt();
+
+            while (escolha == 1) {
+                System.out.println("Escolha um nome:");
+                System.out.println("1 - Lucas");
+                System.out.println("2 - Enzo");
+                System.out.println("3 - Eloisa");
+
+                int nomeEscolhido = scanner.nextInt();
+
+                switch (nomeEscolhido) {
+                    case 1:
+                        System.out.println("Você escolheu: Lucas");
+                        break;
+                    case 2:
+                        System.out.println("Você escolheu: Enzo");
+                        break;
+                    case 3:
+                        System.out.println("Você escolheu: Eloisa");
+                        break;
+                    default:
+                        System.out.println("Erro: Nome inválido!");
+                        break;
+                }
+
+            }
+
+            System.out.println("Saindo...");
+
+        } catch (Exception e) {
+            System.out.println("Erro: Por favor, insira um index válido!");
+        } finally {
+            scanner.close(); 
+        }
+    }
+
+    public void ex04() {
+
+    }
+
+
 }
-
-
