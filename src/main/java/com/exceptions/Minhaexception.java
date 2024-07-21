@@ -1,8 +1,6 @@
 package com.exceptions;
 
-public class Minhaexception extends RuntimeExceptionException {
-
-    private final String message;
+public class Minhaexception extends Exception {
 
     public Minhaexception() {
         super();
@@ -15,6 +13,7 @@ public class Minhaexception extends RuntimeExceptionException {
     public Minhaexception(String message, Throwable cause) {
         super(message, cause);
     }
+    
 }
 
 
